@@ -64,13 +64,7 @@ Clone this repo
 
 Install dependencies (e.g., yfinance, scikit-learn, tensorflow, matplotlib)
 
-Run data_preprocessing.py to fetch and prepare data
-
-Train model via train_model.py
-
-Execute backtesting using backtest_strategy.py
-
-Visualize equity and run optimization via portfolio_optimization.py
+!!!Remember also to download the macro.csv file!!!
 
 **🔍 Key Takeaways**
 LSTM captures sequential price trends but underperforms on generalizability
