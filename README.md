@@ -57,14 +57,6 @@ class_weight: 'balanced'
 Hybrid
 LSTM → softmax output → concatenated with features → RF classifier
 
-**📈 Results Summary**
-
-Model	Accuracy	BUY F1	SELL F1	Notes
-LSTM	75%	0.57	0.83	High precision, low recall
-Random Forest	77%	0.82	0.72	Balanced performance
-Hybrid	77%	0.68	0.83	Best overall performance
-Hybrid strategy beats Buy-and-Hold in 3 out of 4 PE stocks
-
 Portfolio optimization further improves equity growth and reduces drawdowns
 
 **🛠️ How to Run**
