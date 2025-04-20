@@ -1,10 +1,10 @@
 # ML-Quant-Trading
-📈 Machine Learning Approaches in Quantitative Trading
+**📈 Machine Learning Approaches in Quantitative Trading**
 Authors: Hien Vinh Pham, Chery Lorika, Travis Lauren, Lumbantobing Johanna
 Course: CX 4240 - Machine Learning Applications in Quantitative Trading
 Semester: Spring 2025
 
-📄 Overview
+**📄 Overview**
 This project develops a machine learning-based strategy to generate daily BUY, HOLD, or SELL signals for selected stocks. We investigate the performance of three models:
 
 - LSTM (Long Short-Term Memory)
@@ -15,7 +15,7 @@ This project develops a machine learning-based strategy to generate daily BUY, H
 
 The main objective is to evaluate whether these models can outperform a traditional Buy-and-Hold strategy on private equity stocks using historical data from 2021 to 2024.
 
-📊 Data Sources and Features
+**📊 Data Sources and Features**
 Stock Data: Daily price data from Yahoo Finance (yfinance)
 
 Technical Indicators: RSI, MACD, Bollinger Bands
@@ -24,7 +24,7 @@ Macroeconomic Indicators: GDP, IPO Count, M&A Activities
 
 Each model receives 13 engineered features derived from price history and macroeconomic metrics.
 
-🧪 Methodology
+**🧪 Methodology**
 Training: On Blackstone (BX) stock (Private Equity sector)
 
 Testing: On APO, CG, KKR, ARES
@@ -35,7 +35,7 @@ Backtesting: Simulated trading based on predicted signals compared to Buy-and-Ho
 
 Portfolio Optimization: Mean-Variance Optimization based on model returns
 
-🧠 Models and Hyperparameters
+**🧠 Models and Hyperparameters**
 LSTM
 Units: 8
 
@@ -55,7 +55,7 @@ class_weight: 'balanced'
 Hybrid
 LSTM → softmax output → concatenated with features → RF classifier
 
-📈 Results Summary
+**📈 Results Summary**
 
 Model	Accuracy	BUY F1	SELL F1	Notes
 LSTM	75%	0.57	0.83	High precision, low recall
@@ -65,7 +65,7 @@ Hybrid strategy beats Buy-and-Hold in 3 out of 4 PE stocks
 
 Portfolio optimization further improves equity growth and reduces drawdowns
 
-🛠️ How to Run
+**🛠️ How to Run**
 Clone this repo
 
 Install dependencies (e.g., yfinance, scikit-learn, tensorflow, matplotlib)
@@ -78,7 +78,7 @@ Execute backtesting using backtest_strategy.py
 
 Visualize equity and run optimization via portfolio_optimization.py
 
-🔍 Key Takeaways
+**🔍 Key Takeaways**
 LSTM captures sequential price trends but underperforms on generalizability
 
 Random Forest performs well on macro + technical indicators
@@ -89,7 +89,7 @@ Sector-specific training improves results — generalization across sectors is l
 
 Portfolio optimization adds tangible improvement to overall trading strategy performance
 
-📌 Future Work
+**📌 Future Work**
 Incorporate dynamic thresholds
 
 Add sector-specific macro indicators
