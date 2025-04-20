@@ -1,7 +1,9 @@
 # ML-Quant-Trading
 **📈 Machine Learning Approaches in Quantitative Trading**
 Authors: Hien Vinh Pham, Chery Lorika, Travis Lauren, Lumbantobing Johanna
+
 Course: CX 4240 - Machine Learning Applications in Quantitative Trading
+
 Semester: Spring 2025
 
 **📄 Overview**
